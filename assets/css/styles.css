@@ -1,0 +1,255 @@
+/* assets/css/styles.css */
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo original */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-bottom: 1px solid #ddd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative; /* Para posicionar el título */
+}
+
+/* Título del encabezado */
+header h1 {
+    color: #1d8348; /* Verde oscuro */
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilo de la navegación */
+.navbar {
+    position: absolute; /* Posiciona la barra de navegación */
+    right: 20px; /* Alinea a la derecha */
+    display: flex;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    border-radius: 5px;
+}
+
+/* Estilo del botón de cerrar sesión */
+.logout-btn {
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff; /* Texto blanco */
+    background-color: #c0392b; /* Rojo para cerrar sesión */
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #a93226; /* Rojo más oscuro */
+    color: #ffffff; /* Mantiene el texto blanco */
+}
+
+/* Estilo de los botones de navegación */
+.nav-btn {
+    margin: 0 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #ffffff; /* Texto blanco */
+    background-color: #28a745; /* Verde */
+    border: none; /* Elimina el borde */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    background-color: #218838; /* Verde más oscuro */
+    color: #ffffff; /* Mantiene el texto blanco */
+}
+
+/* Estilo del contenedor de inicio de sesión */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #e9f7ef; /* Fondo claro verde */
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.login-container h2 {
+    color: #155724; /* Verde oscuro */
+    text-align: center; /* Centrado */
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Verde principal */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #218838; /* Verde más oscuro */
+    color: #fff; /* Mantiene el texto blanco */
+}
+
+.login-container .error {
+    color: #dc3545; /* Color rojo para errores */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos adicionales para las cartas */
+.card-container {
+    display: flex;
+    justify-content: center; /* Centra las cartas horizontalmente */
+    flex-wrap: wrap;
+    padding: 40px; /* Aumenta el padding */
+}
+
+.card {
+    background: #fff;
+    width: 45%; /* Ajusta el ancho para tener dos cartas por fila */
+    max-width: 400px; /* Ancho máximo */
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px; /* Aumenta el tamaño del título */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Estilo general para los formularios */
+form {
+    width: 80%; /* Aumenta el ancho para que se vea más amplio */
+    max-width: 600px; /* Añade un límite máximo al ancho */
+    margin: 50px auto; /* Espaciado vertical más amplio */
+    padding: 40px; /* Aumenta el relleno */
+    border: 1px solid #ccc; /* Color de borde más suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #f9f9f9; /* Fondo suave */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+form h2 {
+    text-align: center; /* Centra el título */
+    color: #28a745; /* Verde principal */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+/* Estilo para los campos de formulario */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Color más oscuro para mejor legibilidad */
+}
+
+/* Centrar la frase de "Experiencia requerida" */
+label.experiencia-requerida {
+    text-align: center; /* Centra el texto */
+    color: #333; /* Color del texto */
+    margin: 10px 0; /* Espaciado vertical */
+}
+
+/* Cambios en los campos de entrada */
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Relleno interno */
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    border: 1px solid #ccc; /* Color de borde más suave */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: border-color 0.3s; /* Transición para el borde */
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #28a745; /* Color de borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+/* Estilo para el botón de enviar */
+button {
+    padding: 12px 20px; /* Mayor relleno */
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+    margin: 20px auto; /* Centrar el botón */
+    display: block; /* Asegura que el botón sea un bloque para centrarse */
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el ratón */
+    color: white; /* Mantiene el texto blanco */
+}
+
+/* Estilos para los campos de experiencia */
+.experiencia-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    margin-bottom: 15px; /* Espacio inferior para el contenedor */
+}
+
+.experiencia-item {
+    display: flex;
+    flex-direction: column; /* Coloca la etiqueta y el input en columna */
+    width: 48%; /* Asegura que cada campo tome un 48% del ancho */
+}
+
+/* Espacio entre el label y el input */
+.experiencia-item label {
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+.experiencia-item input[type="number"] {
+    padding: 8px; /* Añade padding para mejorar la apariencia del input */
+    width: 100%; /* Asegura que los inputs llenen el espacio disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del input */
+}
